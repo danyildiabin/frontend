@@ -68,7 +68,6 @@ main {
 	height: 100vh;
 	overflow: hidden;
 	box-shadow: inset 0px 0px 100pt -80pt black;
-	scroll-snap-align: end;
 }
 
 .mainblock:nth-of-type(1){
@@ -77,9 +76,11 @@ main {
 }
 .mainblock:nth-of-type(2){
 	background-color: #D1B000;
+	scroll-snap-align: start;
 }
 .mainblock:nth-of-type(3){
 	background-color: #00D1D1;
+	scroll-snap-align: start;
 }
 
 .background {
@@ -141,5 +142,5 @@ footer {
 	padding: 30px;
 	color: whitesmoke;
 	text-align: center;
-	scroll-snap-align: end;
+	scroll-snap-align: start;
 }
