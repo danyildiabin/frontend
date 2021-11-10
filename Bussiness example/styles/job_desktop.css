@@ -1,0 +1,310 @@
+@media screen and (min-width: 720px) {
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        transition-duration: 700ms;
+        font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        align-content: flex-start;
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: xx-large;
+        font-style: normal;
+        margin: 50px;
+        margin-top: 10px;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    h3 {
+        font-size: larger;
+    }
+    h4 {
+        font-size: large;
+    }
+    h5 {
+        font-size: medium;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    b {
+        font-size: large;
+        font-style: bold;
+        padding: 5px 0;
+    }
+
+    #shortinfo {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 40px;
+    }
+
+    #shortinfo div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #shortinfo div div {
+        width: 360px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        margin: 0px;
+    }
+
+    #work {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 40px;
+    }
+
+    #work ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    #work li {
+        font-weight: 500;
+        font-size: large;
+        padding: 5px 0;
+    }
+
+    #docs {
+        background-color: rgba(0, 0, 0, 0.85);
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 40px;
+    }
+
+    #docs ol {
+        width: 640px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    #docs li div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    #docs h2 {
+        font-weight: 200;
+    }
+
+    #guide {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 40px;
+    }
+
+    #guide ol {
+        width: 640px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #guide li div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    #guide h2 {
+        font-weight: 200;
+    }
+
+    #about_company {
+        min-height: 300px;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    #about_company h1 {
+        color: whitesmoke;
+        /* background-color: whitesmoke; */
+        margin: 0;
+        padding: 10px;
+        /* border-radius: 10px; */
+        /* box-shadow: 0 5px 0 0 rgba(230, 230, 230, 0.7); */
+    }
+
+    #about_company a {
+        background-color: whitesmoke;
+        margin: 0;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 5px 0 0 rgba(230, 230, 230, 0.7);
+        margin-top: 50px;
+        cursor: pointer;
+        
+        animation-name: fading;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    a:link {
+        color: black;
+    }
+
+    a {
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    #background {
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        position: fixed;
+        background-image: url("../images/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @keyframes fading {
+        from {
+            background-color: rgb(245, 245, 245, 1);
+            box-shadow: 0 5px 0 0 rgba(230, 230, 230, 0.7);
+        }
+
+        to {
+            background-color: rgb(245, 245, 245, 0.7);
+            box-shadow: 0 5px 0 0 rgba(230, 230, 230, 0.7);
+        }
+    }
+
+    #feedback {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 40px;
+    }
+
+    #note {
+        margin-bottom: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    #feedback form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        width: 420px;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    #feedback input {
+        width: calc(100% - 20px);
+        height: 20px;
+        padding: 10px;
+        border: rgba(0, 0, 0, 0.5) 1px solid;
+        margin: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    #feedback input[type=button] {
+        width: calc(100% + 2px);
+        height: 40px;
+        padding: 10px;
+        border: rgba(0, 0, 0, 0.5) 1px solid;
+        margin: 5px 0;
+        cursor: pointer;
+        transition-duration: 100ms;
+    }
+
+    #feedback input[type=button]:hover {
+        background-color: rgb(220, 220, 220);
+        transition-duration: 200ms;
+    }
+
+    #contacts {
+        background-color: rgba(0, 0, 0, 0.85);
+        color: whitesmoke;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 40px;
+    }
+
+    #social {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #social img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        box-shadow: 0 0 15px -5px whitesmoke;
+    }
+
+    #social a {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ziglings</title>
+		<link rel="icon" type="image/x-icon" href="zig-mark.svg">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<main>
+			<div id="lineNumbers">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+				<span>11</span>
+				<span>12</span>
+				<span>13</span>
+				<span>14</span>
+				<span>15</span>
+				<span>16</span>
+				<span>17</span>
+				<span>18</span>
+				<span>19</span>
+				<span>20</span>
+				<span>21</span>
+				<span>22</span>
+				<span>23</span>
+				<span>24</span>
+				<span>25</span>
+				<span>26</span>
+				<span>27</span>
+				<span>28</span>
+				<span>29</span>
+				<span>30</span>
+				<span>31</span>
+				<span>32</span>
+				<span>33</span>
+				<span>34</span>
+				<span>35</span>
+				<span>36</span>
+				<span>37</span>
+				<span>38</span>
+				<span>39</span>
+				<span>40</span>
+				<span>41</span>
+				<span>42</span>
+				<span>43</span>
+				<span>44</span>
+				<span>45</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span>7</span>
+			</div>
+			<div id="code" spellcheck="false" onscroll="scrolllines()">//
+// It seems we got a little carried away making everything "const u8"!
+// <span style="color: aqua;">7</span>
+//     "const" values cannot change.
+//     "u"     types are "unsigned" and cannot store negative values.
+//     "8"     means the type is 8 bits in size.
+//
+// Example: foo cannot change (it is CONSTant)
+//          bar can change (it is VARiable):
+//
+//     const foo: u8 = 20;
+//     var bar: u8 = 20;
+//
+// Example: foo cannot be negative and can hold 0 to 255
+//          bar CAN be negative and can hold −128 to 127
+//
+//     const foo: u8 = 20;
+//     const bar: i8 = -20;
+//
+// Example: foo can hold 8 bits (0 to 255)
+//          bar can hold 16 bits (0 to 65,535)
+//
+//     const foo: u8 = 20;
+//     const bar: u16 = 2000;
+//
+// You can do just about any combination of these that you can think of:
+//
+//     u32 can hold 0 to 4,294,967,295
+//     i64 can hold −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+//
+// Please fix this program so that the types can hold the desired values
+// and the errors go away!
+//
+const std = @import("std");
+
+pub fn main() void {
+    const n: u8 = 50;
+    n = n + 5;
+
+    const pi: u8 = 314159;
+
+    const negative_eleven: u8 = -11;
+
+    // There are no errors in the next line, just explanation:
+    // Perhaps you noticed before that the print function takes two
+    // parameters. Now it will make more sense: the first parameter
+    // is a string. The string may contain placeholders '{}', and the
+    // second parameter is an "anonymous list literal" (don't worry
+    // about this for now!) with the values to be printed.
+    std.debug.print("{} {} {}\n", .{ n, pi, negative_eleven });
+}</div>
+		</main>
+		<aside>
+			<img src="zig-logo-light.svg">
+			<nav>
+				<ul id="ziglings">
+					<li><div>001</div><div>Hello</div></li>
+					<li><div>002</div><div>Standard Library</div></li>
+					<li><div>003</div><div>Assignments</div></li>
+					<li><div>004</div><div>Arrays</div></li>
+					<li><div>005</div><div>Arrays 2</div></li>
+					<li><div>006</div><div>Strings</div></li>
+					<li><div>007</div><div>Strings 2</div></li>
+					<li><div>008</div><div>Quiz</div></li>
+					<li><div>009</div><div>If statment</div></li>
+					<li><div>010</div><div>If statment 2</div></li>
+					<li><div>011</div><div>While</div></li>
+					<li><div>012</div><div>While 2</div></li>
+					<li><div>013</div><div>If statment 2</div></li>
+					<li><div>014</div><div>While</div></li>
+					<li><div>015</div><div>While 2</div></li>
+					<li><div>013</div><div>If statment 2</div></li>
+					<li><div>014</div><div>While</div></li>
+					<li><div>015</div><div>While 2</div></li>
+				</ul>
+			</nav>
+			<div id="controls">
+				<button type="button" id="reset_button"><img src="reset.png">Reset</button>
+				<button type="button" id="run_button"><img src="play.png">Run</button>
+			</div>
+		</aside>
+	</body>
+	<script src="index.js"></script>
+</html>
