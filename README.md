@@ -1,2 +1,1 @@
-# Website where I place my experiments in webdev
-[link](https://danyildiabin.github.io/website/)
+# [Website](https://danyildiabin.github.io/frontend/) where I place my experiments in webdev
